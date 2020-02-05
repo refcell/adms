@@ -5,9 +5,15 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: 'Block #1'
+  - name: Install and cache
     task:
       jobs:
-        - name: 'Job #1'
+        - name: yarn
           commands:
-            - checkout
+            - yarn
+  - name: Run Tests
+    task:
+      jobs:
+        - name: npm run test
+          commands:
+            - npm run test
