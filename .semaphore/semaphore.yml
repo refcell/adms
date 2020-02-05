@@ -1,0 +1,19 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Install and cache
+    task:
+      jobs:
+        - name: yarn
+          commands:
+            - yarn
+  - name: Run Tests
+    task:
+      jobs:
+        - name: npm run test
+          commands:
+            - npm run test
