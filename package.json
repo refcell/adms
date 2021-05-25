@@ -47,6 +47,6 @@
     "packageManager": "npm"
   },
   "devDependencies": {
-    "@types/node": "^13.7.0"
+    "@types/node": "^15.6.1"
   }
 }
