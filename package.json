@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/abigger87/adms#readme",
   "dependencies": {
-    "@types/react": "^16.9.19",
+    "@types/react": "^17.0.14",
     "@types/react-dom": "^16.9.5",
     "next": "^9.2.1",
     "react": "^16.12.0",
